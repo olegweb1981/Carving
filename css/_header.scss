@@ -1,0 +1,17 @@
+.header {
+    position: relative;
+    background-image: url(/img/header-bg-img.jpg);
+    background-position: top center;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+        color: #e8be9f;
+        font-size: 60px;
+        text-align: center;
+        padding-top: 40px;
+        font-family: 'Marck Script', cursive;
+        font-weight: 600;
+    }
+}

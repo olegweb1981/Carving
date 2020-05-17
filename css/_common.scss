@@ -1,0 +1,43 @@
+html {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+        -moz-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+body {
+    background-image: url(/img/bg-img.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+i {
+    border-radius: 100%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.caption {
+    font-size: 21.4667px;
+    font-weight:700;
+    letter-spacing: 1.07333px;
+    color: #e8be9f;
+}

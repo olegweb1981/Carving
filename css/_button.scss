@@ -1,0 +1,25 @@
+.button {
+    background-color: transparent;
+    border: solid 1px;
+    border-color: rgba(255, 255, 255, 0.15);
+    border-radius: 3em;
+    color: #e8be9f;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 23px 51px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+}
+
+ul.actions {
+    margin: 0;
+    padding: 0;
+}

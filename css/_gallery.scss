@@ -1,0 +1,25 @@
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+
+    .gallery-item {
+        width: 30%;
+        overflow: hidden;
+        display: block;
+
+        img {
+            width: 100%;
+            cursor: pointer;
+            transition: transform 0.2s ease-out;
+            display: block;
+
+            &:hover {
+                transform: scale(1.15);
+            }
+        }
+    }
+}

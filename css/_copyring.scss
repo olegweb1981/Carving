@@ -1,0 +1,23 @@
+.copyring {
+    padding: 50px 0 50px 0;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        li {
+            border-left: 1px solid black;
+            padding-left: 20px;
+            margin-left: 20px;
+
+            &:nth-child(1) {
+                padding-left: 0;
+                margin-left: 0;
+                border-left: 0;
+            }
+        }
+    }
+}

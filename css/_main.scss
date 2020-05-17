@@ -1,0 +1,38 @@
+.main {
+    .tab-content {
+        padding: 40px;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+
+        ol{
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            padding-bottom: 15px;
+        }
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 0.5s;
+    }
+   
+    @keyframes fade {
+        from {
+          opacity: 0.1;
+        }
+        to {
+          opacity: 1;
+        }
+    }
+}
