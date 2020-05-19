@@ -55,7 +55,7 @@ body {
 
 i {
   border-radius: 100%;
-  color: white;
+  color: #e8be9f;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -118,7 +118,7 @@ i {
   font-weight: 600;
   cursor: pointer;
   font-family: 'Marck Script', cursive;
-  z-index: 99999;
+  z-index: 2;
 }
 
 .main .tab-content {
@@ -204,9 +204,32 @@ i {
   display: block;
 }
 
-.gallery .gallery-item img:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+.hide-gallery {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.zoom {
+  margin: 0 auto;
+  position: fixed;
+  z-index: 4;
+  top: 0%;
+  left: 36%;
+}
+
+.close {
+  background-image: url(/img/close.png);
+  padding: 10px 0px 10px 0px;
+  background-repeat: no-repeat;
+  background-position: top right;
+  cursor: pointer;
+  margin: 30px;
 }
 
 .feedback {
@@ -275,7 +298,7 @@ i {
 .aside-input:focus,
 .message-text:focus {
   border: solid 2px;
-  border-color: white;
+  border-color: #e8be9f;
 }
 
 .aside-input {
@@ -327,7 +350,7 @@ i {
 .email i,
 .phone i {
   font-size: 17.1733px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
   width: 42px;
   height: 42px;
   top: 41px;
@@ -345,7 +368,7 @@ i {
 .button {
   background-color: transparent;
   border: solid 1px;
-  border-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(232, 190, 159, 0.15);
   border-radius: 3em;
   color: #e8be9f;
   cursor: pointer;
@@ -360,7 +383,9 @@ i {
 
 .button:hover {
   background-color: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(232, 190, 159, 0.4);
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
 }
 
 ul.actions {
