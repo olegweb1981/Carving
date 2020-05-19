@@ -204,32 +204,9 @@ i {
   display: block;
 }
 
-.hide-gallery {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 3;
-  width: 100%;
-  min-height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: none;
-}
-
-.zoom {
-  margin: 0 auto;
-  position: fixed;
-  z-index: 4;
-  top: 0%;
-  left: 36%;
-}
-
-.close {
-  background-image: url(/img/close.png);
-  padding: 10px 0px 10px 0px;
-  background-repeat: no-repeat;
-  background-position: top right;
-  cursor: pointer;
-  margin: 30px;
+.gallery .gallery-item img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .feedback {

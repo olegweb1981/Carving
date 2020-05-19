@@ -36,21 +36,8 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Zoom gallery
-    let closeGallery = document.querySelector('.close'),
-        galleryItems = document.querySelectorAll('.gallery-item'),
-        hideGallery = document.querySelector('.hide-gallery');
 
-
-    for (const galleryItem of galleryItems) {
-        galleryItem.addEventListener('click', function() {
-            hideGallery.style.display = 'block';
-            galleryItem.classList.add('zoom'); 
-        });
-        
-        closeGallery.addEventListener('click', function() {
-            hideGallery.style.display = 'none';
-            galleryItem.classList.remove('slider');
-        });
-    }
+    // Lightbox plugan.
+    var gallery = new SimpleLightbox('.gallery a', {
+    });
 });
